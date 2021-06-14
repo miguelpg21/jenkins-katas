@@ -19,10 +19,11 @@ pipeline {
           steps {
             sh '''chmod 777 ci/build-app.sh ci/build-app.sh
 '''
+            archiveArtifacts 'app/build/libs/'
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             archiveArtifacts 'app/build/libs/'
           }
