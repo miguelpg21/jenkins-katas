@@ -17,8 +17,8 @@ pipeline {
 
           }
           steps {
-            sh '''chmod 777 ci/build-app.sh
-ci/build-app.sh'''
+            sh '''chmod 777 ci/build-app.sh ci/build-app.sh
+'''
           }
         }
 
